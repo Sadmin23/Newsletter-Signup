@@ -43,7 +43,8 @@ app.post("/",function(req, res){
     const url = "https://us8.api.mailchimp.com/3.0/lists/bdd0e0631f"
 
     const options = {
-        method: "POST"
+        method: "POST",
+        auth: "Sadmin:ac0c02988c9952b603583212ab670d628-us8"
     }
 
     const request = https.request(url, options, function(response){
